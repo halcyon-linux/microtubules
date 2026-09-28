@@ -1,0 +1,94 @@
+# -*- mode: org; -*-
+#+STARTUP: latexpreview
+
+# ========================================
+# ELSEVIER CAS DOUBLE-COLUMN CONFIGURATION
+# ========================================
+
+# === LATEX CLASS ===
+#+LATEX_COMPILER: lualatex
+#+LATEX_CLASS: cas-dc
+#+LATEX_CLASS_OPTIONS: [review,longmktitle]
+
+# === ORG OPTIONS ===
+#+OPTIONS: toc:nil num:t
+#+OPTIONS: ^:{}
+#+OPTIONS: author:nil date:nil title:t
+#+OPTIONS: H:3 \n:nil @:t ::t |:t ^:{} -:t f:t *:t <:t
+#+OPTIONS: tex:t latex:t skip:nil d:nil todo:nil pri:nil tags:nil
+
+# === MODERN FONT SYSTEM (LuaLaTeX) ===
+#+LATEX_HEADER: \usepackage{fontspec}
+#+LATEX_HEADER: \setmathfont{STIX Two Math}
+
+# === CORE MATH PACKAGES ===
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amsfonts}
+#+LATEX_HEADER: \usepackage{mathtools}
+#+LATEX_HEADER: \usepackage{unicode-math}
+#+LATEX_HEADER: \usepackage{physics}
+#+LATEX_HEADER: \usepackage{siunitx}
+
+# === REFERENCES AND LINKS ===
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+#+LATEX_HEADER: \usepackage{cleveref}
+
+# === BIBLIOGRAPHY (Using CAS BibTeX style) ===
+#+LATEX_HEADER: \biboptions{super,sort&compress}
+#+LATEX_HEADER: \bibliographystyle{model1-num-names}
+
+# === PHYSICS-SPECIFIC PACKAGES ===
+#+LATEX_HEADER: \usepackage{braket}
+#+LATEX_HEADER: \usepackage{tensor}
+
+#+bibliography: citation/reference.bib
+#+cite_export: natbib
+
+
+#+TITLE: Information Processing in Microtubules
+#+AUTHOR: Ahsanur Rahman
+#+DATE: \today
+#+EMAIL: ahsanur041@proton.me
+
+#+BEGIN_abstract
+This paper looks at the structural and biophysical properties of microtubules and how it can act as information strings for processing the phenotypes of cells, and how information strings translate to Frohlich’s excitations. In doing so, energy transfer within microtubules is also evaluated. The paper also looks at certain information processing models based off tubulins in microtubules, and eventually an information processing model based off C-terminal tails. In addition, the paper evaluates how information processing might be related to tumorigenesis with respect to ancestral cells. In conclusion, paper identifies that a flow of information might be related to the complex biochemistry and phenotypes of cancer cells.
+#+END_abstract
+
+* Introduction
+
+Although the cancer cells are always destructive to the organism they reside in, the cells themselves are very efficient and self-sufficient. They eventually adapt and acquire the hallmarks of cancer that allow them to respond productively to a negative action from the host organism.
+
+This level of complexity is often analogous to the complexity of the interconnected web-like structures that from the cytoskeleton. This cytoskeleton forms the backbone of the cytoplasm and is essentially responsible, in one way or the other, for most of the activities in the cell. This paper proposes that some form of information processing exist within the cytoskeletal network that exist. This would allow the cancer cells to rapidly respond and adapt to its tumor microenvironment. For this purpose, this paper reviews the possibilities of information processing within the microtubules as well as its energy dynamics.
+
+Furthermore, this paper also reviews the atavistic model of cancer – that proposes that cancer cells revert back to the last eukaryotic common ancestor (LECA) - in relation to the energy dynamics with information processing. The energy dynamics of cancer cells – Warburg effect – has some similarities with the energy dynamics of these LECAs during their time period when the Earth’s atmosphere was highly hypoxic- a condition that is often advantageous for cancer cells.
+
+In this paper, we review the likely possibility of information processing playing a role in the tumorigenesis pathways of cancer cells that analogous to LECA cells.
+
+* Microtubules: Structure and Function
+** Interior of a cell
+The cytoplasm of a cell is comprised of 70% water but these water molecules do not move freely in the cytoplasm. This is because the cytoplasm and the cell, in general, are supported by a network of microtubules(MTs) assemblies known as the cytoskeleton. There are also other elements of the cytoskeleton that will be discussed later on in this paper. These cytoskeletal networks exist in solid-liquid transition (sol-gel state). This is because the MTs are in constant dynamic instability where polymerization of the MTs are considered the solid phase and the depolymerization constitutes the free tubulin subunits in the liquid medium of the cell (gel state)[cite:@rasmussen1990]. Theoretical findings suggest that the optimal computational capabilities of the cytoskeletal network exist in these sol-gel transitions[cite:@packard1988; @langton1990].
+
+** \alpha\beta-tubulin
+Both the centrioles and the mitotic spindles are made up of long, cylindrical protein complexes called microtubules. These microtubules are made up of protofilaments, that, in turn, are made up of \alpha\beta-tubulin heterodimeric subunits. Human MTs usually contain 13 protofilaments. Each tubulin subunit measures () 8nm×4nm×5nm and consists of α and β tubulins, each measuring at \(4\,\text{nm by }5\,\text{nm}\) and 55,000 Da of molecular weight. The subunits join end-to-end with a helical pitch patterns of 3, 5 and 8[cite:@luduena1973; @shelanski1973] to form a continuous polymer while joined to the subunits laterally in the previous helical turn. This is the A lattice form of protofilaments, but B lattice also exists and is less common and not of interest to this paper. The resulting microtubule forms a hollow cylindrical structure as depicted in figure 1.
+
+Although the \(\alpha\) and \(\beta\) are very similar in structure, differences exist because of their folding behaviour. The core of each monomer, however, contains 2 \(\beta\) sheets surrounded by \(\alpha\) sheets. The monomers can then be subdivided into three functional domains consisting of: amino terminal domain that can bind GDP or GTP; an intermediate domain with a pocket for binding paclitaxel; and a carboxy-terminal end that bind motor proteins. The C terminal tail of each monomer stick out of the monomer.
+
+Tuszynski et al. 2005(7) via TINKER simulations determined that tubulin monomers are mostly negatively charged at physiological pH, such that most of the negative charges are localized at the C terminal tails of these monomers. A single tail has a negative charge of 11e-(82). At pH 7, this tail would be mostly extended due to the repulsive action from neighbouring negatively charged amino acid. However, at more acidic pH, the tail compresses since the negative charges are neutralized by the protons. Furthermore, the whole microtubule is negatively charged at physiological pH as depicted in figure 2(7).
+
+The hydrophobic interiors of tubulin dimers give rise to equipotential surfaces of electrostatic charges as viewed from the topography of the potential slices taken along the axis of the dimer. However, the top of the dimer reveals a double-well structure indicating the possibility of quantum tunneling occurring between the energy minimaFigure3.
+
+There are several sources of dipole moment in this heterodimer structure. The charge distribution in the monomers allows the formation as large dipole with the negative charge located at the α monomer while the positive charges located at the β monomer. When two or more such dimers polymerize, the net dipole moment results in the protofilament axis. Although the C terminal tail in each monomer can form a double layer of charges due to the presence of counter ions, the principle dipole moment results from the partial charges of the individual amino acids of the heterodimer.
+
+The electrostatic potential of the heterodimers are found to be largely negative on the left side of the heterodimer while largely positive on the right side at physiological pH7. When two dimers are aligned side-by-side due to such electrostatic attraction the adjacent dimer is observed to be offset by 0.9nm or 4.9nm vertically relative to the first dimer7. Each unit of energy corresponds to 0.62eV.
+
+The amount of offset depends on the type of lattice formed in the microtubules. Tuszynski et al. (2005) found similar offsets in their simulations when the minima in the left sidefigure5 is aligned side-by-side with maxima of the right side7. However, the back and front sides of the two adjacent heterodimers are more stable since opposite dipoles face each otherfigure6. Th various dipoles present within two adjacent tubulin dimers explain the twisted hexagonal lattice interaction within the microtubule.
+
+In the ferroelectric model of microtubules, the tubulin dimers do not have a net charge, instead they have net dipoles resulting in an overall polarization of the MTs. Figure 7 shows the up and down state of these dipoles with respect the axis of the MT. Due to the radial component of the dipole the interaction energy between the dipole and the electric field is by given by:
+
+
+
+
+
+* References
+#+print_bibliography:

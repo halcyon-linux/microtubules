@@ -1,0 +1,5 @@
+.direnv/
+flake.lock
+.auctex-auto/
+main-pdf/
+ltximg/

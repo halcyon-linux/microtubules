@@ -1,0 +1,364 @@
+\documentclass[letterpaper,final,times]{cas-dc}
+%\documentclass[letterpaper, final, times]{cas-sc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    citecolor =red,
+    }
+%\usepackage[numbers]{natbib}
+%\usepackage[authoryear]{natbib}
+\usepackage[numbers, comma, super, sort&compress]{natbib}
+\usepackage{amsmath,amsfonts,amssymb, physics, braket, blindtext, mathtools}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{soul}
+\usepackage{color}
+\numberwithin{equation}{section}
+
+\begin{document}
+\let\WriteBookmarks\relax
+\def\floatpagepagefraction{1}
+\def\textpagefraction{.001}
+\shorttitle{Information Processing in MTs and Tumor Evolution}
+\shortauthors{Rahman et al.}
+%\begin{frontmatter}
+
+\title[mode=title]{\textbf{Information Processing in Microtubules and Tumor Evolution}}
+\author[1]{Ahsanur Rahman}
+\cormark[1]
+\ead{ahsanur@ualberta.ca}
+\address[1]{Department of Mathematics and Statistical Sciences, University of Alberta}
+
+\author[2]{Jack Tuszynski}
+\address[2]{Department of Physics, University of Alberta}
+
+
+\cortext[cor1]{Corresponding author}
+\maketitle
+\tableofcontents
+\begin{abstract}
+This paper looks at the structural and biophysical properties of microtubules and how it can act as information strings for processing the phenotypes of cells, and how information strings translate to Frohlich’s excitations. In doing so, energy transfer within microtubules is also evaluated. The paper also looks at certain information processing models based off tubulins in microtubules, and eventually an information processing model based off C-terminal tails. In addition, the paper evaluates how information processing might be related to tumorigenesis with respect to ancestral cells. In conclusion, paper identifies that a flow of information might be related to the complex biochemistry and phenotypes of cancer cells.
+\end{abstract}
+
+\section{Introduction}\noindent
+Although cancer cells are always destructive to an organism they reside in, the cells themselves are very efficient and self-sufficient. They eventually adapt and acquire the hallmarks of cancer that allows them to respond productively to a negative action from the host organism. When patients are diagnosed with a late-stage cancer and are unresponsive to any form of cancer therapy or treatment, the diagnosis often refers to metastatic cancer. The unresponsiveness likely results from the adaptations the cancer cells acquire that allows them to resist the treatment. One would assume a wide range of signaling pathways are involved that differ from patient to patient.If these electromagnetic forces resulting from the cancer cells are weaker than that of normal cells, this difference might allow the invasion of cancer cells into normal healthy cells\citep{pokorny2009}, such as when cancer cells cross the basal membrane in epithelial cells. This might support the idea of change in Frohlich’s frequencies.
+
+This level of complexity is often analogous to the complexity of the interconnected web-like structures that from the cytoskeleton. This cytoskeleton forms the backbone of the cytoplasm and is essentially responsible, in one way or the other, for most of the activities in the cell. This paper proposes that some form of information processing exist within the cytoskeletal network that exist. This would allow the cancer cells to rapidly respond and adapt to its tumor microenvironment. For this purpose, this paper reviews the possibilities of information processing within the microtubules as well as its energy dynamics.
+
+Furthermore, this paper also reviews the atavistic model of cancer – that proposes that cancer cells revert back to the last eukaryotic common ancestor (LECA) - in relation to the energy dynamics with information processing. The energy dynamics of cancer cells – Warburg effect – has some similarities with the energy dynamics of these LECAs during their time period when the Earth’s atmosphere was highly hypoxic- a condition that is often advantageous for cancer cells.
+
+In this paper, we review the likely possibility of information processing playing a role in the tumorigenesis pathways of cancer cells that analogous to LECA cells.
+
+\section{Microtubules: Structure and Function}
+\subsection{Interior of a Cell}\noindent
+The cytoplasm of a cell is comprised of 70 percent water but these water molecules do not move freely in the cytoplasm. This is because the cytoplasm and the cell, in general, are supported by a network of microtubules (MTs) assemblies known as the cytoskeleton. There are also other elements of the cytoskeleton that will be discussed later on in this paper. These cytoskeletal networks exist in solid-liquid transition (sol-gel state). This is because the MTs are in constant dynamic instability where polymerization of the MTs are considered the solid phase and the depolymerization constitutes the free tubulin subunits in the liquid medium of the cell (gel state)\citep{rasmussen1990}. Theoretical findings suggest that the optimal computational capabilities of the cytoskeletal network exist in its sol-gel transitions\citep{langton1990}.
+
+\subsection{\texorpdfstring{$\alpha\beta$} - tubulin dimer}\noindent
+Both the centrioles and the mitotic spindles are made up of long, cylindrical protein complexes called microtubules. These microtubules are made up of protofilaments, that, in turn, are made up of $\alpha\beta$ tubulin heterodimeric subunits. Human MTs usually contain 13 protofilaments. Each tubulin subunit measures $8nm$ by $4nm$ by $5nm$ and consists of $\alpha$ and $\beta$ tubulins, each measuring $4nm$ by $5nm$ and $55,000 Da$ of molecular weight. The subunits join end-to-end with a helical pitch patterns of 3, 5 and 8\citep{shelanski1973,luduena1973} to form a continuous polymer while simultaneously joined to the subunits laterally in the previous helical turn. This is the A lattice form of protofilaments. $\beta$ lattice also exists but is less common and, so not of interest to this paper. The resulting structure of the microtubule forms a hollow cylinder as depicted in figure 1.
+
+Although the $\alpha$ and $\beta$ monomers are very similar in structure, there are differences in their folding pattern (six isotypes of $\alpha$ monomer and seven isotypes of $\beta$ monomer). The core in each monomer is composed of two $\beta$ sheet and $\alpha$ sheets surrounding them. The monomers can then be subdivided into 3 functional domains consisting of: amino terminal domain that can bind GDP or GTP; an intermediate domain with a pocket for binding paclitaxel; and a carboxy-terminal end that bind motor proteins. The C terminal tail of each monomer stick out of the monomer.
+
+\todo[color=blue!40]{read the tuszynski2005 paper from here}
+\citet{tuszynski2005} via TINKER simulations determined that tubulin monomers are mostly negatively charged at physiological pH, such that most of the negative charges are localized at the C terminal tails of these monomers. A single tail has a negative charge of $11e^-$\cite{priel2005}. At pH 7, this tail would be mostly extended due to the repulsive action from neighbouring negatively charged amino acid. However, at more acidic pH, the tail compresses since the negative charges are neutralized by the protons. Furthermore, the whole microtubule is negatively charged at physiological pH as depicted in figure 2\citep{tuszynski2005}.
+
+The hydrophobic interiors of tubulin dimers give rise to equipotential surfaces of electrostatic charges as viewed from the topography of the potential slices taken along the axis of the dimer. However, the top of the dimer reveals a double-well structure indicating the possibility of quantum tunneling
+occurring between the energy minima(Figure3) .
+
+There are several sources of dipole moment in this heterodimer structure. The charge distribution in the monomers allows the formation as large dipole with the negative charge located at the $\alpha$ monomer while the positive charges located at the $\beta$ monomer. When two or more such dimers polymerize, the net dipole moment results in the protofilament axis. Although the C terminal tail in each monomer can form a double layer of charges due to the presence of counter ions, the principle dipole moment results from the partial charges of the individual amino acids of the heterodimer.
+
+The electrostatic potential of the heterodimers are found to be largely negative on the left side of the heterodimer while largely positive on the right side at physiological $pH 7$ . When two dimers are aligned side-by-side due to such electrostatic attraction the adjacent dimer is observed to be offset by $0.9nm$ or $4.9nm$ vertically relative to the first dimer\citep{tuszynski2005} . Each unit of energy corresponds to $0.62eV$.
+
+The amount of offset depends on the type of lattice formed in the microtubules. \citet{tuszynski2005} found similar offsets in their simulations when the minima in the left side figure5 is aligned side-by-side with maxima of the right side. However, the back and front sides of the two adjacent heterodimers are more stable since opposite dipoles face each other figure6 . Th various dipoles present within two adjacent tubulin dimers explain the twisted hexagonal lattice interaction within the microtubule.
+
+In the ferroelectric model of microtubules, the tubulin dimers do not have a net charge, instead, they form net electric dipoles resulting in an overall polarization of the MTs. \todo{Research this figure more carefully} Figure 7 shows the up and down state of these dipoles with respect the axis of the MT. Due to the radial component of the dipole the interaction energy between the electric dipole and the electric field is by given by:
+\begin{equation}
+    U_{int} = -\boldsymbol{p}\cdot\boldsymbol{E}
+\end{equation}
+where $\boldsymbol{p}$ is the dipole moment and $\boldsymbol{E}$ is the electric field. Therefore, the interaction energy between two such dipoles become:
+\begin{equation}
+     U_{int} = \frac{\boldsymbol{p_1}\cdot\boldsymbol{p_2}-3(\boldsymbol{p_1}\cdot\hat{r})(\boldsymbol{p_2}\cdot\hat{r})}{4r^3\epsilon\epsilon_0}
+\end{equation}
+where $r$ is the distance between two dipoles, $\hat{r}$ is the unit vector from the 1st and the 2nd dipole, $\epsilon_r$ is the relative permittivity of the medium, and $\epsilon_0$ is the vacuum permittivity.
+
+These dipoles will interact such that the lowest energy is achieved. However, at higher temperatures, the interaction energy cannot control the order of the dipoles, so the dipoles are not in phase. At lower temperature, it is the opposite case where interaction determines the
+order of the dipoles.
+
+$\alpha\beta$-heterodimer can exist as two conformation states: open or closed conformation, depending on whether the $\beta$-subunit has GTP or GDP bound to it. In the open confirmation GTP is bound non-constitutively to $\beta$-subunit. As the GTP is hydrolyzed to GDP, there is a change conformation that causes a 27 bend along the dimer’s axis. This GDP-$\beta$-tubulin is unstable and promotes the removal of its heterodimer from the mitochondrial complex unless stabilized by MAPs, centrioles or other structures\citep{7}. The free GDP-tubulins are then converted back to GTP-tubulin, applicable for association into microtubules.
+
+There are three types of Van der Waals forces that regulate the conformations of proteins,  including microtubules:
+\begin{enumerate}[a)]
+    \item Permanent dipole–permanent dipole
+    \item Permanent dipole–induced dipole
+    \item Induced dipole–induced dipole
+\end{enumerate}
+
+However, out of the three, induced dipole-induced dipole interactions or better known as
+London forces are the most numerous but the weakest of the three. These London forces are
+critical in the forming the hydrophobic core of proteins. It is possible because the asymmetry
+of the electron cloud that form dipoles in an otherwise symmetrical and neutral atoms. However, location of electron is uncertain, so, the London forces are subject to quantum uncertainty\citep{4}.
+
+Since we have already that established that the tubulin subunits are dipolar and having permanent orientation with respect to the poles, tubulins and the MTs are considered to be electrets. Electrets are substances that permanent dipole characteristics\citep{27}. Electrets materials can store energy and polarization. Electrets, in general, are piezoelectric, so MTs are likely to piezoelectric. Therefore, one would assume that the tubulins may change their shape or conformation in response to electric stimuli or change their electrical state in response to a mechanical stimuli\citep{27}. Electrets are also pyzoelectric, meaning that the molecules change conformation or electric state in response to change in temperature, provided the permanent dipoles are aligned in parallel. MTs are well suited for pyroelectric properties since the tubulins are aligned in parallel with respect to the dipoles.
+
+\citet{25} proposed that the conformational states of the tubulin dimers are coupled to the dipolar states. These dimers, in turn, are interacting with their neighboring dimer and their respective dipoles to form an array of interconnecting dipoles\citep{10}. This extensive array is formed by microtubule-associated proteins (\textbf{\textit{MAPS}}) that connect different microtubules to each other and give rise to the extensive network of the cytoskeleton. As a result of this cooperativity, wave-like propagation of the two conformational states may be transmitted
+across the microtubule network. This would lead to better understanding information
+processing in microtubules.
+
+Nevertheless, there are three geometrical arrangements found in the microtubules\citep{10}, with respect to the phase of the electric dipoles:
+\begin{enumerate}[a)]
+    \item Random Phase
+    \item Ferroelectric (where the phase aligns with the external electric field)
+    \item Intermediate phase between ferroelectric and random
+\end{enumerate}
+
+\section{Conduction Pathways in Tubulins}\noindent
+Although protein structures are generally considered to be conductive, a lot of their function might be mediated via electron transfer within the protein system. For example, in \textit{E. coli} photoactivation is mediated by electron hopping via tryptophan residues. Aromatic amino acids include tryptophan, tyrosine, phenylalanine and histidine are ideal for electron tunneling due to the resonance in the benzene/non-benzene rings in these amino acids. However, tryptophan has the greatest resonance due to its extra indole ring, so it has the highest fluorescence among the four amino acids.
+
+\citet{113} further supported this with nonradiative photon exchange experiments. Thus, it makes tryptophan the most likely candidate for electron movement and photon exchange in MTs.
+
+As mentioned before in a previous section, dimer measures at $8nm$ by $5nm$ by $4nm$, while each monomer measures at $4nm$ by $5nm$ by $4nm$. As seen in figure 15, there are three tryptophan residues on both the monomers, while two tryptophan residues reside in the neck. Foerster distance limits electron excitation travel to under 10Å in an inert medium like ions, but within a protein electron can move via bond hopping (electron hopping) over more than 30Å \citep{10}. Figure 14 shows that there are distances of 30Å and above between some the tryptophan residues in the dimer. The figure also signifies that there are multiple pathways for electron hopping and the different pathways would control the dimer conformations.
+
+Figure 11 showed that there are more histidine residues in the dimer than tryptophan, which also increases the number of routes for electron hopping since the hopping may not be restricted to a single aromatic residue but can occur within multiple residues.
+
+As a result of the variation in the possible pathways, conduction within the MTs can follow
+certain Fibonacci sequences as shown in figure 13. While combination of histidine and tryptophan can result in the conduction of the left-most pattern in figure 13(Fibonacci 3 and
+most likely), conduction within only histidine residues would lead 5 and 8 winding patterns\citep{10} and conduction within only tryptophan residues would cause the 13-step repeat pattern due to the almost vertical conduction pathway proposed by \citet{10}. Which winding pattern exists is still uncertain but a possible combination likely results.
+
+Although it is uncertain to what degree conformational changes might occur in the dimer due to the electron hopping, it is clear that conduction of electrons is likely possible via the aromatic amino acids in the dimer. Formation of ordered water around the dimers can further facilitate this conduction. Nevertheless, recent experimental evidence suggested that electron transfer with and long tryptophan residues can may protein functionality\citep{88, 89} supporting the possibility of tubulin function due to the different conduction pathways.
+
+\section{C-terminus Tail}
+\subsection{C-terminal Tail Interactions with Tubulin Surface}
+As previously mentioned in Section 2.2, tubulins are mostly negatively charged, but they also have positive charges on their surface. This has important implications on the interaction of the tubulin surface with its C-terminal tail as well interactions with other ligands. Depending on the isotype of tubulin monomer, the C terminal tail of the $\beta$ monomer has $10-12e^-$ charge, while C terminal tail of the $\alpha$ monomer has around $7-8e^{-}$ charge\citep{83}. There are several possible interactions happening between the tails and the tubulin surface(body) which can affect the binding ligands to tubulin\citep{84}.
+
+Based on simulated annealing, \citet{83} found out that $\alpha$-tubulin tails are more likely to point perpendicularly to the MT axis while the $\beta$-tubulin tails are more likely to bend laterally along the MT axis.
+
+\citet{83} predominantly found two kinds of tail body interactions: (1) charged
+glutamate and aspartate residues on $\alpha$-tubulin tails interact with the positively charged
+residues on helix 11 of $\beta$-tubulin, and vice versa; \textit{or} (2) tail residues interact with residues on helix/beta sheet 9 loop of the same monomer. However, this interaction was between an aromatic group and a charged residue, instead of charged residues on both tail and body.
+
+\subsection{C-terminal Tail Conformations}
+Although \citet{83} simulations showed fixed results depending on the tubulin monomer, there are two possible configurations of the two C-tails in a monomer: (1) both the tails are erect; \textit{and} (2) one tail is erect while the other is inclined towards the tubulin surface\citep{82}. However, the probability of finding C-tails upright is higher than finding C-tails binding to the tubulin surface. The different conformations exist to minimize the interaction energy of the whole MT systems. The energy difference between the bent and the upright state is only a few $k_BT$, so the conformations can be subject to external thermal fluctuations\citep{82}. These C-tails interact with each other via Coulomb interactions.
+
+\section{Dynamic Instability in Microtubules}
+Microtubules are dynamic protein structures. They exist in constant dynamic instability, meaning that microtubules switch periods of slow growth and rapid degradation of their tubulins\citep{17}. This is made possible by the exchange and hydrolysis of GTP at the $\beta$-monomer of these heterodimer after GTP-tubulin is incorporated into the growing MT GTP binds only constitutively to $\alpha$-subunits MTs, like their subunits, are arranged in plus and minus ends. Plus ends undergo more cycles of polymerization than depolymerization compared to their minus ends\citep{18}, most likely due to the fact that the plus ends ($\beta$ monomer, which is also positively charged) are facing the cellular cytoplasm while the minus ends are anchored to the cell membrane\citep{4}. Nevertheless, GDP-tubulin is unstable and would be removed from the MT if exposed. Nogales et al. (1998) found structural evidence for the interaction of incoming tubulin dimers with nucleotides already present in the MT that showed GTP hydrolysis to GDP. However, it is suggested that the growing end forms a GTP-cap, keeping itself and safe from depolarization\citep{17}.
+
+As a result of dynamic instability, the cytoskeleton exists in sol-gel phase where the polymerization is the ‘sol’ or solid phase and the depolymerization is the ‘gel’ phase or viscous phase 12, because the tubulins are in solution.
+
+There are four parameters that are used to determine this apparent dynamic instability: rate of growth, rate of shrinkage, frequency of switching from growth to shrinkage (known as ‘catastrophe frequency’) and frequency of switching from shrinkage back to growth (known as ‘rescue frequency’). To evaluate these parameters, we must first consider the length of the individual protofilaments that vary from one protofilament to the other\citep{4}. This would result in several possible patterns of ragged surfaces on the MT’s end. Assuming that the length of MTs follow a Poisson distribution, the standard deviation would be $\sqrt{100}{1000}$, where the variance is 1000 tubulins, the average number of tubulins found in a protofilament – length of this protofilament is $8$$\mu$$m$. Based on the type of imaging used to view the MT, its length will appear as the average length, maximum length or the minimum length Figure16 . All three definitions of the MT ends are possible although figure 15 only considered the positive end of the MT\citep{4}.
+
+Currently, there are three models that explain GTP-dimer hydrolysis to GDP-dimer: (1) Vectorial; (2) Random; (3) Coupled Random (4) Vectorial and Random. Vectorial hydrolysis simply states that the tubulin-GTP in a protofilament is immediately hydrolyzed after a new GTP-tubulin is incorporated in the growing end. Catastrophe is defined as loss of the GTP-cap. Random hydrolysis\citep{100} states GTP-tubulin in any position along the protofilament has the same probability of undergoing hydrolysis. However, this model also states that deeper the GDP-tubulin is in the protofilament, the older the tubulin is. Both the models can only predict the dynamics over short tubulin dimer concentrations\citep{4}. Coupled random hydrolysis\citep{98} is very similar to random hydrolysis except that hydrolysis can only occur for tubulins embedded in the protofilament. Catastrophe only occurs when the average length of the GTP-cap is lost to fluctuations or when the half the average length is lost to fluctuations while the other half is hydrolyzed. There is also a fourth type\citep{99}that combines vectorial and random hydrolysis and prevents GTP-cap from growing too long.
+
+The dynamic instability that the ends of MTs possess can have important implications on the information processing capabilities of MTs.
+
+\section{Frohlich's Excitations}
+Any charged material carrying dipoles is capable of electric vibrations if the system allows for elastic deformity\citep{11}. Coherence can then exist within the system if a certain threshold for energy supply rate is crossed. Within such a system, properties of its elements can be determined at one space-time ($x_1, t_1$) using the properties at a different space-time ($x_0 , t_0$)\citep{4}.
+
+In a Bose-Einstein condensation, as the temperature of a Bose gas is decreased below a certain threshold, the particles in the gas condense into a single quantum state. In a similar situation, keeping temperature constant, number of particles in the form of quanta, $h\omega_k$ are added to the system and redistributed to other degrees of freedom in the system until the system reaches a static state where all the electric modes in the system have a higher energy than the thermal equilibrium. This difference in energy in the system is channeled into a single mode with the lowest frequency. These low frequency coherent excitations then dominate the whole system while stabilizing it. Therefore, instead of increasing the temperature of the system, the excess energy is used to maintain a coherent electrical wave\citep{25}. This excess energy is not thermalized due to the elastic deformability of biological molecules such as proteins or in our case, tubulin dimers. In the absence of such elasticity, the excess energy would in fact lead to an increase of the surrounding’s temperature. This sort of coherent excitation can be categorized as coherent excitation of a single polar mode and it exists as a steady state, meaning that the total quanta of the system does not change\citep{26}. The MT network could, in fact, carry electrical oscillations across the whole network within the cell\citep{25}. Furthermore, these coherent frequencies in one system might interact non-locally with a distant system with the same frequency, implicating the idea of quantum entanglement taking place, provided that the two systems are isolated enough.
+
+A second category of coherent excitation can exist that creates a metastable polar state by supplying single large amount of energy in a single step. In our case, when GTP is hydrolyzed to GDP, $h\omega_k$ quanta of energy enter in discrete amounts. As a result, the tubulin forms a closed conformation as its excited metastable state\citep{33}. Due to the electrostatic and dipole interactions, tubulin will bend to minimize the energy. However, these coherent oscillations might only exist while the tubulin is in solution and only be useful for storing energy in the conformational states.
+
+The two types of excitations discussed so far can be easily be switched on and off depending on the energy supply to the system.
+
+\section{Coherence in the Cytoskeleton}
+\subsection{Quantum Effects in Microtubules}
+MTs ability for transporting a protein or a molecule (load) would likely depend on the interaction between the electronic and nuclear degrees of freedom within the load between closed and open conformations? The nucleus in an atom is mostly stationary, so its superposition of states would be insignificant to affect any change in its position. Electrons, on the other, are mobile, so the superpositions of its various states is more significant in
+attributing electrons a position in space-time\citep{35}. However, if the possible eigenstates of the electron’s superposition have the same energies, then the probability of finding an electron in a position is independent of time\citep{38}. On the contrary, if the superposition of different eigenstates contributed different amount of energies to the wavefunction, then the probability of finding an electron in a position changes with respect to time. This change in probability is likely due to the constructive and destructive interference between the variable possible eigenstates with different energies. This variability in the electron’s position and charge distribution would inadvertently cause agitations to the nucleus. This would speed up the discovery of local minima between the electron and the nucleus\citep{35}, and in extension, speed up the transitions between the tubulin’s conformation in solution. Similar events might occur at the C-tails of tubulins.
+
+The Born-Oppenheimer approximation assumes that the potential of an electron is largely bound to its nucleus due to the large mass difference between them, so the electrons would not affect the position of the this stationary nucleus. Thus, the wavefunctions of both the electron and the nucleus become one wavefunction. However, this would not hold true for delocalized electrons, as Conrad pointed out\citep{35}, as the potential of this delocalized electrons would only be partially bound to the potential of the almost stationary nucleus. As a result, quantum processes such electron tunneling, delocalization and superposition could affect the nuclear position.
+
+\citet{25} proposed that quantum dipole oscillations within hydrophobic cores of proteins could be coupled to the protein conformations. These oscillations in the dipoles of tubulins would result incoherent excitations within the cytoskeletal network. Thus, one can postulate that some form information processing including long range interaction might occur where the conformation states of the tubulins or their C-tails act as quantum bits or qubits of information.
+
+Theoretical findings suggest that the optimal computational capabilities of the cytoskeletal network exist in its sol-gel transitions\citep{56, 57}. Further evidence for a computation cytoplasm come from data obtained from nuclear magnetic resonance, nuclear diffraction results and other techniques, which show a large amount of water molecules bound in the cytoplasm rather than freely flowing. Such bound water molecules to the cytoskeleton are called
+vicinal water molecules and have properties different from freely-floating water molecules: lower density, high heat capacity and higher viscosity. These vicinal water molecules can, in fact, bind to the C terminal tails of tubulins and assist in carrying coherent excitations.
+
+Furthermore, the tubulins in the MT are a density of about $10^{17}$ $cm^{-3}$, which implies that the charge separation of the tubulin dipoles is within the limit for biological molecules\citep{59}.
+
+Frohlich’s oscillations in the form of conformational changes of tubulin dimer is impractical due to very few degrees of freedom for tubulin dimers inside the protofilament. Although tubulin dimers on the plus end (and minus end, although less dynamic) has far more degrees of freedom for conformational oscillations due to the dynamic instability, the time difference between the hydrolysis of GTP-tubulin to activate solitons – later discussed- and the addition of a new GTP-tubulin is far greater than the  seconds for which Frohlich’s excitations is expected to occur. Therefore, these oscillations might not take place.
+
+As previously mentioned, tubulin is only incorporated into the growing MT end if it has GTP bound to its $\beta$-monomer. However, once incorporated, this GTP can be hydrolyzed to GDP while the tubulin is still attached. There is time delay for tubulin-GDP to be removed from the MT. During this time, it is likely that the tubulin’s electret properties can be activated since the activation energy for biological molecules is ($0.2-0.4 eV$)\citep{58} which is similar to the free energy $0.42eV$\citep{87} released from the hydrolysis of one molecule of GTP.
+
+\subsection{Microtubules and Solitons}\noindent
+The long-range coherence that Frohlich proposed can occur in biological molecules\citep{25} if the oscillations are non-linear with respect to external source of energy. These oscillations would travel in the form of biological solitons. Fundamentally, a soliton is a wave-packet that is able to carry mass, electric charge, vibrational energy, electromagnetic energy, etc. in the form of a wave-packet\citep{73}. Biological solitons can travel in the form of coupled phonons and excitons along molecular chains in MTs producing non-linear and long-lived\citep{72} vibrations. Davydov proposed that biological solitons can be initiated by the hydrolysis of ATP and travel along the $\alpha$ helix of proteins\citep{74, 75}. Perturbations on the electronegative charge field on the outer surface of MTs can account for the wave-like propagation of solitons.
+
+Therefore, the cytoskeletal lattices array may support soliton propagation since each tubulin monomer is 22 percent $\alpha$ helices. As previously mention in Section 3.4, the GTP in the newly incorporated tubulin to MT- is hydrolyzed to GDP upon another GTP-tubulin. This hydrolysis can initiate the soliton propagation since the free energy associated with it is around $0.42 eV$ per molecule of GTP, greater than the free energy of $0.31 eV$ from ATP hydrolysis. It is worth noting that not all energy from GTP hydrolysis is used to initiate the soliton\citep{76}. However, the propagation may be subject to alterations as a result of dimer-dimer neighbor interactions, dimer conformational and $Ca^{+2}$ binding sites, attachment of GTP, MAPs and contractile proteins.
+
+Furthermore, the propagating solitons within the MT lattice will be subjected to switches and gates at every dimer-dimer interaction. There might also be interactions between the C-tails of neighboring dimers. This would result in several permutations of propagation pathways for the soliton. This is comparable to information processing in computers and would account for the dynamic organization of cellular activities\citep{77}. For example, the biological actions of kinesin and dynein and their coordination in cellular transport can be explained by the pattern of soliton propagation. MT and other cytoskeletal
+filaments might focus depolarization waves as solitons by non-linear waveguide behavior\citep{78}. Due to the soliton waveguide, MTs will have varying self-organizing patterns as well as varying interactions with the neighbor due to the different degrees of freedom. This is known as cellular automata.
+
+\subsection{Energy Transfer}\noindent
+So far, the theme of this paper is based on the information processing capabilities of MTs due its electret properties. In fact, the semi-conductor like properties of tryptophan and histidine residues have been supported by (86), who argued that the MTs can act as information strings analogous to semiconductor word processors.
+
+\citet{87} believe that the coherent excitations proposed by Frohlich travel within the MT in the form of kink-like excitations (KLE) or kink-solitons where adjacent regions of the MT have opposite polarization vectors and the oscillations of its dipoles have only one degree of freedom which is parallel to the intrinsic electric field This electric field, in turn, is parallel to the MT’s axis. These KLEs may propagate with a particular velocity that is proportional to the electrical field.
+
+The presence of KLEs can be supported by the asymmetric rates of growth and degradation of MTs at the plus and minus ends: the plus ends have a higher growth rate than degradation rate while the minus end has the opposite. Addition of new tubulin-GTP will initiate the hydrolysis of the GTP of an attached tubulin. This hydrolysis can propagate in the KLEs to the minus end where its energy can assist in the hydrolysis of tubulins. However, KLEs can only exist when the length of MTs have exceeded a particular threshold since shorter lengths would not able to provide the sufficient energy required to form KLE.
+
+As previously mentioned, GTP-cap may be associated with the stability of the plus end. However, upon hydrolysis of this GTP, the
+stability may be lost as exposed tubulin-GDP is unstable. This can also be explained by the formation of KLEs as well.
+
+External electric fields adding to the Hamiltonian in \citep{87} model might affect the propagation of the KLE in two ways: (1) if the intrinsic field and the external field have same direction, the propagation will speed up; (2) if these fields oppose each other, speed will be reduced.. In this way, the KLE propagation might serve as information strings.
+
+\section{Information Processing in MTs}
+\subsection{Craddock's Model}
+Several theoretical models for microtubule information processing exists as listed in Table 1. However, only few of those suggest the existence of both quantum and classical means of information processing including Ising spin systems\citep{9}, quantum Hopfield Neural networks\citep{90}, and cellular automata(\textbf{CA})\citep{91}.
+
+\citet{92} proposed a model for information processing in MTs based off of the CA model. \citet{101}(figure17) determined the electrostatic potential map of 3.5Å structure of $\alpha\beta$-tubulin dimer\citep{85}. The cross-section of this map revealed that there are two regions of positive potential separated by $2nm$ negative potential. This supports the double-well potential structure of tubulin proposed by \citet{7} where electron tunneling might occur between the two minima, mentioned in a previous section. Comparing the $\alpha\beta$-tubulin at 3.5Å and the electrostatic map (figure17), histidine $\beta$-28 residue is approximately 11Å away from the right well while the tryptophan $\alpha$-407 residue is approximately 8Å away from the left well of the double potential. Therefore, this histidine and tryptophan residues would be able to provide mobile electrons in electron transfer\citep{92}.
+
+During the modelling, the authors decided to view the double-well structure of tubulins as an infinite square-double well potential with the following descriptions in table 1:
+\begin{table}[width=1\linewidth,cols=1,pos=h]
+\begin{tabular*}{\tblwidth}{@{} LLLL@{} }
+\toprule
+$V(x)$ & x\\
+\midrule
+$+\infty$ & ($-\infty, -\frac{L}{2}$] \\
+$0$ & ($-\frac{L}{2}, -a$) \\
+$V_0$ & [$-a, a$] \\
+$0$ & ($a, \frac{L}{2}$) \\
+$+\infty$ & [$\frac{L}{2}, +\infty,$) \\
+\bottomrule
+\end{tabular*}
+\caption{The double-well structure of tubulins as an infinite square-double well, where where, $x$ is the center of the symmetric wells, $L$ is the width of the double-potential, $V_0$ is the potential barrier and $2a$ is the width of the potential barrier and $L(x)$ is a function of $x$.}\label{tbl1}
+\end{table}
+
+The dynamics of the MT system would depend on the position of mobile electrons in the double-well structure while being limited within the dimer. Therefore, if the electron is found in the left side of the well, then the dimer is in $\alpha$ state while the dimer is in the $\beta$ state if the electron is found in the right side of the well\citep{92}. Due to the lack of space between individual dimers, the ions and water were not considered when determining the energy of an electron in the central dimer. Therefore, this was energy determined by the Coulomb interactions with its neighbors:
+
+\begin{equation}
+E_C = \sum_{m=0}^{5}\frac{e^2}{4\pi\epsilon\epsilon_0r_m}
+\end{equation}
+
+where, $e$ is the charge of an electron, $r_m$ is the separation between the central dimer electron and its $m^th$ neighboring electron, and m is the index labelling the neighbors from 0 to 5(figure16).
+
+Next, the authors wanted to minimize the energy of the total system by comparing the energy between the central electron in the $\alpha$ state and the $\beta$ state. This energy was determined by:
+\begin{equation}
+    \Delta E_C = A \sum_{m=0}^{5}(\frac{1}{r_\alpha}-\frac{1}{r_\beta})
+\end{equation}
+where, $A=\frac{e^2}{4\pi\epsilon\epsilon_0r_m}$ Therefore, the $E_C$ and $\Delta E_C$ were the principle parameters for the transition rules in the \citet{92} model. However, to make the transition from the two states, work must be done to change the electrostatic map by the minimum resolution of 3.5Å of the structure, so that the minimum distance changed in this 3D structure (change in distance) must be at least 3.5Å. As a result, the the work done is:
+\begin{equation}
+    W = F\Delta x
+      = \frac{1}{2}k \Delta x^2
+\end{equation}
+
+where $k$ is the spring constant for the tubulin dimer and $x$ is the distance. Assuming $k$ is about $4N/M$\citep{93}, the minimum work done is about $1.53eV$. However, the energy required for the central electron to move from one side of the well to the other is below $0.2meV$\citep{94}, well below the energy for work done. Although the interactions with the neighbor electrons can increase this energy ($0.6eV$ from Eq(2)), the value of $k$ also increases as a result. Therefore, changing the electrostatic map is not possible in this way. Furthermore, this central electron cannot move to the conduction band since typical conduction band energies range from $2.57-3.12eV$\citep{92}.
+
+However, this electron can shift to the other side of the well via quantum tunneling despite its energy being far lower than the potential barrier. The tunneling probability is defined by the parameters of the potential barrier. The position and the energy this electron has varies with time, which complicates the tunneling probability of finding an electron in either side of the well. Therefore, the Wentzel-Kramers-Brillouin (WKB) method is used to solve the tunneling probability, $P$ with energy $E$:
+\begin{equation}
+    P_E = \frac{e^{-2\sigma}}{(1+\frac{e^{-2\sigma}}{4})^2}
+\end{equation}
+with
+\begin{equation}
+\sigma = \int_{p}^{q} \sqrt{\frac{2m}{{\hbar}^2}(V(x)-E)}  dx
+\end{equation}
+
+When $\sigma >1$, the tunneling probability $P_E = e^{-2\sigma}$. There are three transition rules for electron tunneling:
+\begin{enumerate}
+    \item $E<V_0,\quad P_E = exp[\int_{-a}^{a}\sqrt{\frac{2m}{{\hbar}^2}(V(x)-E)} dx]$
+    \item $E>V_0, \,  \Delta E\leq0, \quad P_E=1$
+    \item $E>V_0$ and $\Delta E>0$, $P_E=exp(-\frac{\Delta E}{k_BT})$
+\end{enumerate}
+
+
+For the simulations, the initial conditions for the MT were the $\alpha$ states with $\beta$ states occurring at $1$ percent probability. The environmental temperature was set at 310K. The simulations were updated both synchronously (300 time steps) and asynchronously ($10^4$ time-steps) and the following behaviors were observed:
+
+Asynchronous simulations showed type III behavior, suggesting information processing was absent due to a clocking mechanism. Increase in temperature had no effect. Synchronous simulations, on the other hand, showed type-II-IV behaviors. However, increase in temperature delayed the onset of type II and IV synchronous behavior. As expected, synchronous updating of the MT system caused it to be more stable over a large range of parameters. For example, type II behavior showed for a large range of potential well depth, the dielectric constant remained the same, indicating the stability of  the MT system. Although type IV behavior had higher values in those parameters and had a shorter range in stability, the stability
+remained constant, indicating the long-lived behavioral patterns of type IV. However, for type III, the increasing values of potential well depth and dielectric constants, potentially rising infinitely gives a hint at the unpredictability of type III behavior. On the contrary, type II behavior gave the most predictable and definite outcomes over $116meV$ and under $7.8 \,dielectric constant$. In the end, these simulations showed that coherent oscillations are possible at physiological temperatures and these oscillating patterns could facilitate or impede the binding of proteins to MTs and their subsequent transport.
+
+\subsection{Role of C-terminus tail in Information Processing}\noindent
+The carboxy terminal tails (C-tails) of tubulins have a double-charged layer due to the accumulation of counterions against the negative charges on the tails along with an ordered layer of water molecules around these counterions. As mentioned before, based on the pH of the water, the tails might be erect or slightly shortened as seen in figure 3. Nevertheless, they should be able to support coherent oscillations in the $10^9 - 10^{11} Hz$ range\citep{94}. Due to the translational degrees of freedom along the MT axis, the C-tails can still oscillate but at different frequencies. At lower pHs, the length of the C-tails will likely decrease, which decrease the wavelength and increase the frequency of the oscillations, provided that then energy supply is constant. At physiological pHs, there might be a perfect balance of ions that would the frequencies to be around Frohlich’s excitations. As seen in Section 3.4, the two possible combinations would then lead to differential pathways for Frohlich’s excitations in the form of solitons. Ordered water molecules around the tail further support the propagation of these solitons. Furthermore, the double-layer of C-tails might serve a secondary purpose for the tubulin propagation as simulated in the previous section. The double-layer can isolate the tubulins from the environment so that quantum processes in the MTs exist in quantum coherence.
+
+However, the most important interactions the C-terminal tails have, might be those interactions the tails have with MAPs. As previously mentioned, MAPs connect different MTs together to form the distinct cytoskeletal patterns that arises. Electron microscopy has shown that MAPs make distinct patterns of connections with the MTs as shown in figure 20.
+
+As such, \citet{82}  elucidated molecular dynamics model to understand the waveguide properties of between connected MTs. Perturbation on the counter-ions surrounding MAP2 might bring it out of equilibrium, and this energy change might travel in the form of solitons due to the likely presence of ordered water around MAP2. These solitons eventually travel to the other end, where another MT is situated. Thus, the simulations showed that the ionic wave may be coupled to C-tail conformation. These results also suggested that the electrostatic perturbations may be transmitted collectively over the cytoskeletal network via these MAP2 channels, providing possible pathways for signal transduction in eukaryotic cells.
+
+\section{Frohlich's Excitations and the Cancer Problem} \noindent
+Cancer cells are often characterized based on their phenotypical morphology under a microscope, where the cells lose their characteristic phentypes from their origin of tissue and often adopt unidentifiable phenotypes. In other words, cancer cells become de-differentiated. This may be achieved via cytoskeletal disintegration or rearrangement. It is safe to assume that that fully de-differentiated cells have a completely different cytoskeleton architecture. All these changes in the electric field surrounding the cytoskeleton as well as change in Frohlich’s frequencies.
+
+\citet{11} proposed that the control of cellular division rests on the coherent excitations mentioned previously. Suppose there are coherent vibrations in an array of cells that are forming a tissue of interest. This would imply that each cell within the tissue respond to the coherent mode with minimum energy. In the absence of energy, interaction with the collective prevents the cell from entering mitosis\citep{11}.
+
+Prior to cellular division, the arrangement and structure of protein-DNA machineries must be altered to facilitate cell division. For this change to occur energy must be supplied to the machineries. If energy is supplied to a cell, the frequency and phase of the cell will change with respect to the coherent mode of the system as energy is directly proportional to the frequency using Planck’s equation. This would lower the intensity of the collective mode. As the number of such cells increase with a steady rate of energy supplied from likely anaerobic glycolysis, a critical intensity is crossed where the collective mode for controlling cell division is lost and the cells in the tissue transition to a state of uncontrollability\citep{11}. Frohlich, in his proposal, considered the cell membrane and its constituents as dipoles. The change in the collective mode would inadvertently cause changes in the protein expression and cellular machineries. In our case, MTs are established as giant dipoles in previous sections. Change in the collective mode would alter the function of the MTs and might change the overall the cytoskeletal architecture. Hence as Frohlich proposed similar loss of control can be accounted for when the MTs and the cytoskeleton are considered as dipoles.
+
+If these electromagnetic forces resulting from the cancer cells are weaker than that of normal cells, this difference might allow the invasion of cancer cells into normal healthy cells\citep{96}, such as when cancer cells cross the basal membrane in epithelial cells. This might support the idea of change in Frohlich’s frequencies.
+
+
+\section{Are Cancer Cells Ancestrial}
+\subsection{Microbial Proto-Consciousness} \noindent
+The Gaia hypothesis proposes that biological matter once evolved from chemical matter constantly interact with the chemical
+matter in its environment to form complex, dynamic networks of ecosystems are able to sustain life. So far, physical principles that are at play in these ecosystems, particularly quantum mediated processes that have been successful in explaining the emergence of conscious life\citep{39}. Formation of the first biological cells during the primitive age of Earth exists on the Gaia and supported by various theories and hypotheses\citep{41,42, 43}. As the single cell multiplied and achieved
+multi-cellularity as well as remaining single-cell in some cases, it received a variety of environmental inputs, and in order to survive such variation in environment it would have had to develop survival traits unique to each. As such, one would assume that these early cells develop some form of consciousness to result in Darwinian principles of evolution.
+
+Consciousness is species-specific. In other words, consciousness is defined by the species itself as different species exhibit different forms of conscious expressions. Several form conscious behaviors exists in the spectra non-human species, so the co-existence of the nervous system with consciousness is not always warranted\citep{9}. Nevertheless, scientists prefer to define consciousness in microorganisms as proto-consciousness.
+
+Microbes occupied 2.75-3 billion years of Earth evolutionary history\citep{44} and about 1.5 billion years ago, eukaryotic cells emerged from the symbiosis of organelles such as mitochondria, plastids etc. bacteria with prokaryotic cells \citep{45}. At later stages, evolution was pacing up due to proto-consciousness-driven differentiation and adaptations\citep{46}. In other words, a system of physical structures would have better chances at evolution due to drive selections. From this perspective, biological components having self-reflexive, self-feeding and self-organizing properties can be considered conscious
+structures \citep{39}. This means that biological structures, such as, the cytoskeleton is aware of its surroundings and respond accordingly, for example, when to create more networks of microfilaments in response to mitotic signals in the cell. Therefore, a cell itself can be considered a conscious system consisting of several conscious structures\citep{39} with each organelle acting as conscious structures. The nature and arrangement of these conscious structures would depend on the degrees of freedom in the informational dogma of the cell (i.e. from DNA to RNA to protein) as well as the various signaling pathways that are that play in the cell.
+
+\citet{39} proposed that quantum consciousness, described in section 3.6, should be apparent in unicellular and multicellular organisms since microtubules is ubiquitous and essential in forming the cellular
+cytoskeleton and supporting cellular information and differentiation. This is apparent in all domains of – archaea, bacteria, eukaryotes. The fact MTs are self-assembling 10 also supports the notion of proto-consciousness.
+
+Whereas previous studies indicate that globular proteins undergo fewer evolutionary rates in their cores compared to the exposed surface, the opposite has been for the $\alpha\beta$ tubulins monomers\citep{55}. In other words, the core of the tubulins has higher evolutionary rate compared to that of its surface(54), indicating that tubulins converse function at its surface. This would imply that tubulins might have higher similarly at the surface for a spectrum of tubulin isomers.
+
+Tubulins in these microtubules and by extension, the cytoskeleton share a common ancestor that resemble the FtsZ protein\citep{47}. Bacteria are also likely to share this homolog\citep{48}. In fact, bacterial FtsZs show (40-50) percent sequence identity across different species while archaeal FtsZs show similar sequence identity \citep{49}. Therefore, one would assume that these FtsZs and their homologs form the basis for quantum computation in micro-organisms and give rise to proto-consciousness \citep{10}. Several theoretical models and simulations support the idea of quantum computation in the cytoskeleton \citep{8, 50, 51, 52, 53}. Furthermore, FstZs and tubulins share a common tertiary structure, where two domains are connected by a central helix. They also have similar nucleotide binding sites.
+
+By the determining the difference between the sequences of nucleotides corresponding to the tubulins (or FtsZ) between these microorganisms and modern eukaryotes, one would likely determine the evolutionary relationships between them.
+
+\subsection{Evolutionary Roots of Cancer}
+Cancer cells are often compared to various ancestral cells- either eukaryotic or prokaryotic. In fact, cancer cells are very similar to the metazoan tree of life\citep{103}, e.g. cancer cells have been traced back to early metazoans\citep{104}. Thus Davila and Zamorano hypothesize that cancer cells, on their way to tumorigenesis, express the phenotypes similar to the last eukaryotic common ancestor (LECA). LECA was a facultative anaerobic that thrived in hypoxic environments but also managed in high $O_2$ environments.
+
+The endosymbiotic hypothesis characterizes how modern eukaryotic cells emerged from the symbiotic merging of host archaebacteria\citep{105} and $\alpha$-proteobacteria\citep{106}. Because the mitochondria are universal to all cells, it can be suggested that LECA cells obtained mitochondria as one of its first organelles. Here, mitochondria can be considered as the evolutionary form of $\alpha$-proteobacteria since both have the ability to utilize oxygen. Based on estimation, the oxygenation event occur about 2.4 billion years ago and the emergence of mitochondria occurred about 2 billion years ago\citep{108}. This would suggest that the emergence of LECA cells during the time when the Earth’s atmosphere was hypoxic\citep{103}.
+
+The mtDNA in mitochondria are often prone to damage by Reactive Oxygen Species(\textbf{ROS}) since mitochondria produces oxygen radicals while utilizing oxygen molecules. Furthermore, the high replication rates of mtDNA\citep{107} makes it error-prone. As a result, mitochondria often suffer from loss of mitochondrial genome. This loss increases as cancer cells progress in tumorigenesis \citep{109}, indicating progression towards reverting to LECA phenotypes. Hence, \citet{103} hypothesized that the loss in mtDNA and its mutations are the principle reasons for the dysregulation of mitochondria. This would break the endosymbiotic contract, but the cancer cells still utilize glycolysis- one of the mechanisms for survival just after the endosymbiotic event. Cancer cells’ increasing dependence on glycolysis for energy is called
+the ‘Warburg effect’. Since cancer cells rely on glycolysis despite the presence of oxygen, this sort of glycolysis is called aerobic glycolysis. The metabolism of LECA might also have been largely reliant on aerobic glycolysis during early stages of emergence\citep{103}. From this, the authors\citep{103} predicted that glycolysis dependence increases as the cancer cell progresses. It has been suggested that cancer cells become dependent on glycolysis on the later stages of development. At these later stages, hypoxia can induce cellular proliferation and metastasis of cancer\citep{103}.
+
+Geochemical and fossil evidence suggested LECA lived between 1.9 and 1.6 billion years ago when the oceans had low amount of dissolved oxygen molecules. The notion cancer cells create tumor microenvironment replicative of LECA environment have been confirmed by computer simulations. These simulations show that cancer cells are invasive under hypoxic conditions\citep{110} and the morphology of their growth resembles the colonies of anaerobic organisms\citep{111}.
+
+\section{Efficiency of Microtubules: Possible Example of Information Processing}
+Microtubules are important in cell division since they form the microtubule organizing center that form the centrosomes. These centrosomes, in turn, are responsible for forming the mitotic spindle (also made of microtubules) that attach to the sister chromatids during metaphase and take apart the sister chromatids so that each cell eventually has one set of chromosomes. The importance of these mitotic spindles is realized when scientists created karyoplasts (cells that had their centrosomes removed) that still had microtubules organizing centers (similar to centrosomes) but do not undergo cell division\citep{6}. Furthermore, these centrosomes guide the mitotic spindle in such a way that the spindles attach to the kinetochore of chromosomes in specific locations.
+
+Mitotic spindles are very coordinated during mitosis. This and level of organization led Daniel Mazia and Theodor Boveri to believe\citep{3} that the mitotic spindle formed an organizing field that directed the spindles to the chromosomes.
+
+Majority of the cancer cells are aneuploid, meaning they have disproportionate number of chromosomes. This would have likely resulted from the centrosomes from not properly functioning. Therefore, mitotic spindles can be ideal candidates to provide circumstantial evidence for information processing within MTs.
+
+\section{Discussion}\noindent
+\citet{112} argued that biologists often ignore biophysical theories that would likely explain many complications in the field of biology. One such complication is the disease of cancer. Due to multiple signaling pathways that result in more than hundred types of cancer diseases, it is very difficult to definitely treat all sorts of cancer diseases while having cures to some. Nevertheless, it is imperative to find out why one treatment works for one patient but may not work properly for another patient for similar cancer types.
+
+One of the main focuses of this paper, is about the cytoskeleton and focusing especially on the biochemical and physical properties of  the microtubules that make most of it. It had been suggested in the past by several physicists, including Frohlich and Penrose, that MTs have information storage and processing abilities. This paper focused mainly Frohlich’s coherent excitations. While several informational models exist based off of Frohlich’s ideas, most of them focus on the tubulin’s conformational states. The problem with these models, as discussed previously, is that the tubulins are subjected to steric hindrance being confined to the polymeric structure of the microtubules. Any vibrations that may occur within the tubulin (ignoring C-tails for the time being) would be made of short wavelengths and be considered in the environmental noise. As a result these oscillations should not considered for informational models in the form of bits mentioned previously. However, if we only consider the oscillations of the C-terminal tails in the form where in a tubulin dimer
+\begin{enumerate}
+    \item one bent C-tail and one erect C-tail is the \textbf{on-switch} or the \textbf{1} bit
+    \item two erect C-tails is an \textbf{off-switch} or the \textbf{0} bit
+\end{enumerate}
+
+Electrons within the C-terminal tails can undergo electron hopping kink-like excitations may be maintained due to the double Debye layer. However, the problem with such proposal arises from the fact, it would be impractical to determine their protein sequences from experimental procedures, hence, computational methods must be used instead. However, we do know that MAPs bind to the C-tails, and so through charge interactions between them, we might one day be able to predict these sequences.
+
+Nevertheless, we do know that the C-tails are dynamic and are able to oscillate due to the high degrees of freedom it has. Due to the possibility of Frohlich’s oscillations occurring in the C-tails, we can derive information processing models, such that different energy signature might lead to different coherent collective mode.
+
+As mentioned previously in Section 10.2, changing from oxidative phosphorylation to glycolysis to meet it's energy requirements,  changes the overall energy signature of the cancer tissue. For long-range communication to occur via Frohlich’s excitations, energy supply rate must be constant and change in this supply due to increase in glycolysis would change the long-range communication. While metastable structure of proteins might not exist since glycolysis does not produce significant amount of energy at a time like oxidative phosphorylation, the transport and availability of proteins would change since MTs via the C-tails interact to carry cargo. Furthermore, the rate of glycolysis might not be the same for every cell depending on the availability of
+substrates.
+
+There is also the possibility that these changes in energy supply rate would alter the overall structure of the cytoskeleton might since we already know that solitons may travel via tryptophan and histidine residues.
+
+Since MTs and, in extent, the whole cytoskeleton is responsible for a cell's structure and its functions, one might assume that the change in energy supply rate might translate to how the cell behave. In other words, this change in energy supply rate translate to information processing within the cell.
+
+This is possibly how tumorigenesis might proceed to produce metastatic cancer cells. As the atavistic model proposes, cancer cells try to re-create the tumor microenvironment similar to the environment exposed to LECA, and one of the major changes is the switch to aerobic glycolysis due to hypoxic environments.
+
+The drive to achieve phenotypes similar to LECA might be considered a form of proto-consciousness as mentioned in Section 10.1. This behavioral driving force would be supported by the flow of information within the microtubules (Section 8.1). At some point this flow would stabilize via synchronization as mentioned in Section 8.1. This synchronization might occur via Frohlich excitations. A change in tumor microenvironment might restart this flow until the tumor re-stabilizes. This would explain how some cancers become resistant to treatment.
+
+\section{Model Proposal: Quantum Hopfield Neural Networks in MTs}\noindent
+Based on the model on Section 8.1 and the information provided so, I would like to incorporate MTs into Hopfield Neural
+Network. This neural network only consists of only layer of nodes which are connected to each other but not to itself. The C-terminal tails would be ideal for this type of neural network, since the complexity of the cytoskeleton allows the MTs to be interconnected. The nodes would act as feedback loops and every input can be an output. Hence, Hopfield networks might be
+able to assimilate the possible infinite permutations in the information pathways in MTs Based on the model on Section 8.1 and the information provided so, I would like to incorporate MTs into Hopfield Neural Network. This neural network only consists of only layer of nodes which are connected to each other but not to itself. The C-terminal tails would be ideal for this type of neural network, since the complexity of the cytoskeleton allows the MTs to be interconnected. The nodes would act as feedback loops and every input can be an output. Hence, Hopfield networks might be able to assimilate the possible infinite permutations in the information pathways in MTs.
+
+In this model, the dimers itself considered as qubits or bits of quantum information. Transmission of information within this network is achieved due to the coulombic interactions between the individual qubits. Similar to the model in Section 8.1, initial conditions are first set, such as the initial dipole moment of the C-tails. Both the interactions of MAPs with the C-tails as well as the C-tails conformations are considered as both outputs and inputs. The output is updated
+according to its weighted inputs and is the lowest energy state of the qubit. Whereas Elizabeth et al (2006) described the qubits in terms of dimer polarization, which is static in most cases, we attribute the qubits as the conformational states of the two C-tails in the dimer: (1) both the C-tails are pointing upright (up-state) and (2) one C-tail is upright and the
+other is bent (down-state). Whereas a bit is either a 0 or 1, a qubit, in our case, is a superposition of up-state and down-state (analogous to 0 and 1). The output is updated according to its weighted inputs and is the lowest energy state of the qubit. The updating mechanism of the network minimizes the Hopfield energy, analogous to the minimizations of Frohlich’s excitations to achieve local minima of coherent or stable signals (long-lived). Change in these signals represent the backpropagation for training the network. Although these signals propagate at lower than physiological temperatures \citep{95}, these can signals be update to propagate following the simulations proposed in Section 8.2. The weights of the nodes are adjusted according to the predicted waveguide properties of MAPs. This is analogous to what Penrose and Hameroff (2003) suggested that MAPs can ‘fine-tune’ quantum oscillations in MTs. This forms the basis for training the neural network while several parameters may be added.
+
+
+
+
+%% Loading bibliography style file
+%\bibliographystyle{model1-num-names}
+\bibliographystyle{cas-model2-names}
+
+% Loading bibliography database
+\bibliography{citation/references}
+
+
+
+
+\end{document}
+
+%reference 1 in the compiled pdf file appears weird with the authors

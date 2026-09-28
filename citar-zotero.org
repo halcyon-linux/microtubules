@@ -1,0 +1,87 @@
+* Bibliography and Citations
+** Citar Configuration (Minimal - Doom Handles Most)
+#+begin_src emacs-lisp
+;; REQUIRED: Set your bibliography path
+;; Doom's biblio module automatically sets org-cite-global-bibliography to match
+(setq citar-bibliography (list (expand-file-name "references.bib" my/org-directory)))
+
+;; OPTIONAL: Set paths for PDFs and notes
+;; These are only needed if you want them in specific locations
+(setq citar-library-paths (list (expand-file-name "pdfs/" my/org-directory)))
+;; Note: citar-notes-paths is NOT needed if using citar-org-roam
+;; citar-org-roam manages notes automatically
+
+;; OPTIONAL: Open entries in Zotero (requires Better BibTeX)
+(setq citar-open-entry-function 'citar-open-entry-in-zotero)
+#+end_src
+
+** citar-org-roam Integration
+#+begin_src emacs-lisp
+;; citar-org-roam is automatically installed by Doom when you have:
+;; - vertico completion
+;; - org +roam
+;; - biblio module
+;; We just need to enable and configure it
+
+(after! citar-org-roam
+  ;; REQUIRED: Enable the integration
+  (citar-org-roam-mode)
+
+  ;; OPTIONAL: Customize note title format
+  ;; Variables: ${author}, ${editor}, ${title}, ${date}, ${year}
+  ;; ${author:%etal} shows "et al." for multiple authors
+  (setq citar-org-roam-note-title-template "${author:%etal} (${year}): ${title}")
+
+  ;; OPTIONAL: Store literature notes in subdirectory
+  ;; Default is "references" - change if you want different name
+  (setq citar-org-roam-subdir "literature")
+
+  ;; REQUIRED: Specify which org-roam capture template to use
+  (setq citar-org-roam-capture-template-key "r"))
+#+end_src
+
+** org-roam Capture Template for Literature Notes
+#+begin_src emacs-lisp
+;; Add a capture template for bibliographic notes
+;; This works with citar-org-roam
+
+(after! org-roam
+  (add-to-list 'org-roam-capture-templates
+               '("r" "Reference" plain
+                 "%?"
+                 :target (file+head "literature/${citekey}.org"
+                                    "#+title: ${citekey}. ${note-title}
+#+created: %U
+#+last_modified: %U
+#+filetags: :literature:
+
+* Summary
+
+* Key Points
+
+* Methodology
+
+* Critical Analysis
+
+* Related Notes
+- 
+
+* Questions
+
+")
+                 :unnarrowed t)))
+#+end_src
+
+** Keybindings
+#+begin_src emacs-lisp
+;; Doom already sets SPC n b to citar-open-notes
+;; Add additional convenient bindings
+
+(map! :leader
+      (:prefix ("n c" . "citations")
+       :desc "Insert citation" "i" #'org-cite-insert
+       :desc "Open citation" "o" #'citar-open
+       :desc "Open notes" "n" #'citar-open-notes
+       :desc "Open library file" "f" #'citar-open-library-files
+       :desc "Open entry (Zotero)" "e" #'citar-open-entry))
+#+end_src
