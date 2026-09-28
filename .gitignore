@@ -3,3 +3,14 @@ flake.lock
 .auctex-auto/
 main-pdf/
 ltximg/
+*.abs
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+/*.pdf
